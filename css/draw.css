@@ -1,0 +1,66 @@
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.draw-shell-nav {
+background-color: #10244f;
+}
+
+#svg {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: #0d1018;
+    width: 100%;
+    height: 100%;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+.btn-default {
+    background-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(204, 204, 204);
+    border-left-color: rgb(204, 204, 204);
+    border-right-color: rgb(204, 204, 204);
+    border-top-color: rgb(204, 204, 204);
+    color: rgb(51, 51, 51);
+}
+
+.draw-shell-rightClick {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    /*transform: scale(2.5);*/
+    display: inline;
+    z-index: 100;
+}
+
+.draw-shell-config {
+    height: 1000px;
+    background-color: #262e4f;
+    margin: 0;
+    padding: 0;
+}
+
+.draw-shell-tree {
+    height: 1000px;
+    background-color: #262e4f;
+    margin: 0;
+    padding: 0;
+}
+
+.draw-shell-SvgMap {
+    height: 1000px;
+    margin: 0;
+    padding: 0;
+
+}
+
