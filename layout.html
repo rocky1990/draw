@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/draw.css" rel="stylesheet">
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/draw.css" rel="stylesheet">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid" id="shell">
+
+
+    <!--<nav class="navarbar navbar-default navbar-fixed-top" role="navigation">-->
+    <!--<div class="navbar-header">-->
+    <!--<a class="navbar-brand" href="#">W3Cschool</a>-->
+    <!--</div>-->
+    <!--</nav>-->
+
+    <!--<div class="draw-shell-rightClick" style="display:none">-->
+    <!--<div class="buttons draw-shell-rightbuttons">-->
+    <!--<button class="but draw-shell-rightClick-drawpoint">画点</button>-->
+    <!--<button class="but draw-shell-rightClick-drawline">画线</button>-->
+    <!--<button class="but draw-shell-rightClick-drawcurve">画曲线</button>-->
+    <!--<button class="but help">帮助</button>-->
+    <!--<button class="but but" data-toggle="collapse" data-parent="#btgc" href="#btg">按钮组</button>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class='overlap'>&#x2190;</div>-->
+    <!--</div>-->
+    <!--<div class="row" id="btgc">-->
+    <!--<div class="col-md-6">-->
+    <!--<div id="btg" class="btn-group">-->
+    <!--<button id="draw" type="button" class="btn btn-default" onclick="createcircle()">&#x270E;</button>-->
+    <!--<button type="button" class="btn btn-default">按钮 2</button>-->
+    <!--<button type="button" class="btn btn-default">按钮 3</button>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="col-md-6">-->
+    <!--<h1 id="H1"></h1>-->
+    <!--</div>-->
+    <!--</div>-->
+    <div class="row draw-shell-nav">
+        <nav class="navarbar" role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">绘图工具</a>
+            </div>
+        </nav>
+    </div>
+    <div class="row draw-shell-map">
+        <!--树形菜单-->
+        <div class="col-md-2 draw-shell-tree">
+            tree
+        </div>
+        <!--绘图界面-->
+        <div class="col-md-8 draw-shell-SvgMap">
+            <svg id="svg">
+                <text id="coordinate" x="0" y="15" fill="red">hhhhh</text>
+                <rect class="station" id="rec" width="20" height="20" fill="white" x="200" y="200"></rect>
+            </svg>
+        </div>
+
+        <!--属性界面-->
+        <div class="col-md-2 draw-shell-config">
+            <div class="row">
+                <div class="btn-group btn-group-justified" role="group">
+                    <div class="col-md-6">
+                        <button type="button" class="btn-default">二次曲线</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button type="button" class="btn-default">三次曲线</button>
+                    </div>
+                </div>
+            </div><!--</div class="row">-->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="input-group">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">起始点x</button>
+                </span>
+                        <input type="text" class="form-control" placeholder="Search for...">
+                    </div><!-- /input-group -->
+                </div><!--</col-md-6>-->
+                <div class="col-md-6">
+                    <div class="input-group">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">起始点y</button>
+                </span>
+                        <input type="text" class="form-control" placeholder="Search for...">
+                    </div><!-- /input-group -->
+                </div><!--</col-md-6>-->
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">终点x</button>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Search for...">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">终点y</button>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Search for...">
+                    </div>
+                </div>
+
+            </div>
+
+        </div><!--</div class="col-md-2 draw-shell-config">-->
+
+
+    </div>
+</div>
+</body>
+</html>
