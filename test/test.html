@@ -8,47 +8,46 @@
     <!-- 可选的Bootstrap主题文件（一般不用引入） -->
     <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/draw.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/snap.js/1.9.3/snap.css" rel="stylesheet">
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
     <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!--<script src="//cdn.bootcss.com/snap.js/1.9.3/snap.js"></script>-->
+    <script src="Snap/dist/snap.svg.js"></script>
     <script src="test.js"></script>
     <script src="test.shape.js"></script>
     <script>
-        $(function () {
-            test.initModule($("#svgmap"));
-        });
-//        shape = (function () {
-//            function Circle() {
-//            }
-//
-//            Circle.prototype.xmlns = "http://www.w3.org/2000/svg";
-//            Circle.prototype.cx = 0;
-//            Circle.prototype.cy = 0;
-//            Circle.prototype.r = 0;
-//            Circle.prototype.init = function (x, y, r) {
-//                var c = document.createElementNS(this.xmlns, "circle");
-//                c.setAttribute("cx", x);
-//                c.setAttribute("cy", y);
-//                c.setAttribute("x", r);
-//                // <circle cx="100" cy="50" r="40" stroke="black"
-//                // stroke-width="2" fill="red"/>
-//                return c;
-//            }
-//            return {
-//                Circle: Circle,
-//            }
-//        }());
-//        var a=new shape.Circle();
-//        aaa=a.init(10,10,100);
-//        aa=100;
+            $(function () {
+//                test.initModule(Snap("#svgmap"));
+//                var s=Snap("#svgmap");
+//                var bigCircle = s.circle(150, 150, 100);
+                var html= "<div>"
+                    + "hahhahah"
+                    + "<p>aaaa</p>"
+                    + "</div>"
+
+                $map=$("#map");
+                $map.append(html);
+                html= "<div>"
+                    + "h"
+                    + "<p>aa999aa</p>"
+                    + "</div>"
+
+                $map.html(html);
+            });
+//    var s = Snap("#svgmap");
+//    var bigCircle = s.circle(150, 150, 100);
+//    bigCircle.attr(
+//    {fill: "red",}
+//    );
     </script>
 </head>
 <body>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.2" id="svgmap" width="500" height="500" >
-    <rect id="map" x="0" y="0" width="500" height="500" style="fill:black" ></rect>
-</svg>
+<!--<svg xmlns="http://www.w3.org/2000/svg" version="1.2" id="svgmap" width="500" height="500">-->
+    <!--<rect id="map" x="0" y="0" width="500" height="500" style="fill:white"></rect>-->
+<!--</svg>-->
+<div id="map"></div>
 
-</svg>
 </body>
 </html>

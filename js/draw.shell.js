@@ -35,6 +35,9 @@ draw.shell = (function () {
         draw.map.initModule($container);
         //添加右键管理框
         draw.rb.initModule($container);
+        //添加属性信息
+        $shell=$container.children(".draw-shell-map");
+        draw.config.initModule($shell);
         setJqueryMap();
     };
     //初始化函数结束

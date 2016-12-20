@@ -4,7 +4,7 @@
 draw.config = (function () {
     //variable set
     var configMap = {
-            main_html: String()
+            curve_html: String()
             + '<div class="col-md-2 draw-shell-config" id="config">'
             + '<div class="row">'
             + '<div class="btn-group btn-group-justified" role="group">'
@@ -55,10 +55,17 @@ draw.config = (function () {
             + '</div>'
             + ''
             + '</div><!--</div class="col-md-2 draw-shell-config">-->'
+
+        circle_html:
+
         },
         stateMap = {
             $container: null,
-        };
+        }, initModule;
     //end of variable set
-
+    initModule = function ($container) {
+        stateMap.$container = $container;
+        $container.append(configMap.curve_html);
+    }
+    return {initModule: initModule,};
 }());
